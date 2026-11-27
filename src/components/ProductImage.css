@@ -1,0 +1,32 @@
+.product-photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #dfdfdc;
+}
+.product-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Un mismo look sirve para enseñar con precisión la prenda superior o inferior. */
+.product-photo--top img {
+  position: absolute;
+  width: 170%;
+  height: 170%;
+  max-width: none;
+  left: -35%;
+  top: -12%;
+  object-fit: cover;
+}
+.product-photo--bottom img {
+  position: absolute;
+  width: 160%;
+  height: 160%;
+  max-width: none;
+  left: -30%;
+  top: -59%;
+  object-fit: cover;
+}

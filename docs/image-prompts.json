@@ -1,0 +1,30 @@
+{
+  "mode": "Built-in image_gen (no API key)",
+  "references": "User-provided portrait and body-reference images. Subsequent looks edited from look-01.",
+  "assets": [
+    {
+      "asset": "public/images/look-02.webp",
+      "prompt": "Use case: identity-preserve. Edit the reference photo, changing ONLY clothing to a WHITE regular-fit technical crewneck t-shirt, and BLACK lightweight running shorts shorter than the original with curved side hem. Preserve EXACT face, hair, skin, body proportions, neutral standing pose, hand position, camera, head and feet positions, scale, floor, background skylight and lighting. Same adult man. Entire body and white trainers visible. Portrait 1024x1536. Professional photoreal sportswear ecommerce photography. No text, no brand logos, no watermarks. This is outfit look-02 in a consistent virtual showroom."
+    },
+    {
+      "asset": "public/images/look-03.webp",
+      "prompt": "Use case: identity-preserve. Edit the reference photo, changing ONLY clothing to a CHARCOAL GRAY oversized dropped-shoulder t-shirt and BLACK two-in-one sports shorts with visible fitted undershorts extending 5 cm below the outer short. Preserve EXACT face, hair, skin, body proportions, neutral standing pose, hand position, camera, head and feet positions, scale, floor, background skylight and lighting. Same adult man. Entire body and white trainers visible. Portrait 1024x1536. Professional photoreal sportswear ecommerce photography. No text, no brand logos, no watermarks. This is outfit look-03 in a consistent virtual showroom."
+    },
+    {
+      "asset": "public/images/look-04.webp",
+      "prompt": "Use case: identity-preserve. Edit the reference photo, changing ONLY clothing to a WHITE athletic sleeveless tank top with normal broad shoulder straps, and BLACK long straight-leg technical track pants with a subtle white piping seam down each side, no stripes or logos. Preserve EXACT face, hair, skin, body proportions, neutral standing pose, hand position, camera, head and feet positions, scale, floor, background skylight and lighting. Same adult man. Entire body and white trainers visible. Portrait 1024x1536. Professional photoreal sportswear ecommerce photography. No text, no brand logos, no watermarks. This is outfit look-04 in a consistent virtual showroom."
+    },
+    {
+      "asset": "public/images/look-05.webp",
+      "prompt": "Use case: identity-preserve. Edit the reference photo, changing ONLY clothing to a BLACK athletic stringer sleeveless tank top with narrow shoulder straps and deeper armholes, and CHARCOAL GRAY tapered technical track pants with ankle zips. Preserve EXACT face, hair, skin, body proportions, neutral standing pose, hand position, camera, head and feet positions, scale, floor, background skylight and lighting. Same adult man. Entire body and white trainers visible. Portrait 1024x1536. Professional photoreal sportswear ecommerce photography. No text, no brand logos, no watermarks. This is outfit look-05 in a consistent virtual showroom."
+    },
+    {
+      "asset": "public/images/look-06.webp",
+      "prompt": "Use case: identity-preserve. Edit the reference photo, changing ONLY clothing to the original fitted BLACK technical t-shirt, and LIGHT GRAY slim technical joggers with ankle cuffs and drawstring waist. Preserve EXACT face, hair, skin, body proportions, neutral standing pose, hand position, camera, head and feet positions, scale, floor, background skylight and lighting. Same adult man. Entire body and white trainers visible. Portrait 1024x1536. Professional photoreal sportswear ecommerce photography. No text, no brand logos, no watermarks. This is outfit look-06 in a consistent virtual showroom."
+    },
+    {
+      "asset": "public/images/look-07.webp",
+      "prompt": "Use case: identity-preserve. Edit the reference photo, changing ONLY clothing to the WHITE regular-fit technical crewneck t-shirt, and BLACK substantial cotton athletic joggers with ankle cuffs and subtle cargo-free side pockets. Preserve EXACT face, hair, skin, body proportions, neutral standing pose, hand position, camera, head and feet positions, scale, floor, background skylight and lighting. Same adult man. Entire body and white trainers visible. Portrait 1024x1536. Professional photoreal sportswear ecommerce photography. No text, no brand logos, no watermarks. This is outfit look-07 in a consistent virtual showroom."
+    }
+  ]
+}

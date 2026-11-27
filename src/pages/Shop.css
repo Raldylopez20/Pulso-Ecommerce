@@ -1,0 +1,134 @@
+.shop-intro {
+  padding: 48px 5% 42px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 25px;
+  background: var(--paper);
+}
+.breadcrumb {
+  font-size: 10px;
+  color: #777;
+  margin-bottom: 30px;
+}
+.breadcrumb a {
+  text-decoration: none;
+}
+.shop-intro h1 {
+  font-size: clamp(48px, 6vw, 82px);
+  margin: 0 0 17px;
+}
+.shop-intro > div > p:last-child {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 0;
+}
+.catalog-section {
+  padding: 30px 5% 80px;
+}
+.catalog-categories {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 5px 0 25px;
+}
+.catalog-categories button {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  padding: 11px 22px;
+  white-space: nowrap;
+  font-size: 11px;
+}
+.catalog-categories button.selected {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+.catalog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 15px 0;
+}
+.catalog-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  max-width: 360px;
+}
+.catalog-search input {
+  border: 0;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 11px;
+  background: transparent;
+  min-width: 0;
+}
+.catalog-search button {
+  border: 0;
+  background: transparent;
+  display: flex;
+}
+.catalog-controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.catalog-controls select {
+  border: 0;
+  background: white;
+  font-size: 10px;
+  padding: 10px 0;
+  max-width: 175px;
+}
+.catalog-results {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px 0;
+  font-size: 10px;
+  color: #777;
+}
+.catalog-results button {
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10px;
+}
+@media (max-width: 700px) {
+  .shop-intro {
+    padding: 30px 20px;
+    display: block;
+  }
+  .shop-intro > .text-link {
+    margin-top: 25px;
+  }
+  .catalog-section {
+    padding: 24px 18px 50px;
+  }
+  .catalog-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .catalog-search {
+    max-width: none;
+  }
+  .catalog-controls {
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .catalog-controls select {
+    font-size: 10px;
+    max-width: 46%;
+  }
+  .catalog-categories button {
+    padding: 10px 17px;
+  }
+}

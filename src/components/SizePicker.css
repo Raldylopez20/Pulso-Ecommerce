@@ -1,0 +1,29 @@
+.size-picker {
+  border: 0;
+  padding: 0;
+  margin: 20px 0;
+}
+.size-picker legend {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.size-picker > div {
+  display: flex;
+  gap: 8px;
+}
+.size-picker button {
+  min-width: 48px;
+  height: 43px;
+  border: 1px solid #ccc;
+  background: transparent;
+  font-size: 12px;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.size-picker button[aria-pressed='true'] {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}

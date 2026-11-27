@@ -1,0 +1,97 @@
+.about-hero {
+  background: #111;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+  overflow: hidden;
+}
+.about-hero > div {
+  padding: 90px 10%;
+  align-self: center;
+}
+.about-hero > div > p:first-child {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+.about-hero h1 {
+  font-size: clamp(65px, 7vw, 100px);
+  margin-bottom: 30px;
+}
+.about-hero > div > p:last-child {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #aaa;
+  max-width: 250px;
+}
+.about-hero > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 80% center;
+}
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+}
+.about-story h2 {
+  font-size: 75px;
+  white-space: pre-line;
+}
+.about-story p {
+  font-size: 13px;
+  line-height: 2;
+  color: #666;
+}
+.about-story .text-link {
+  margin-top: 18px;
+}
+.faq-section {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 10%;
+  background: var(--paper);
+}
+.faq-section > h2 {
+  font-size: 60px;
+}
+.faq-section details {
+  padding: 23px 0;
+  border-bottom: 1px solid #ccc;
+}
+.faq-section summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+.faq-section details p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.9;
+  margin: 20px 0 0;
+}
+@media (max-width: 650px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+  .about-hero > div {
+    padding: 55px 25px;
+  }
+  .about-hero > img {
+    height: 380px;
+  }
+  .about-story,
+  .faq-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .about-story h2 {
+    font-size: 60px;
+  }
+  .faq-section > h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,131 @@
+.product-card {
+  min-width: 0;
+}
+.product-card-figure {
+  position: relative;
+}
+.product-card-image {
+  display: block;
+  height: auto;
+  aspect-ratio: 0.77;
+  position: relative;
+  overflow: hidden;
+  background: #e6e6e3;
+}
+.wishlist-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffffee;
+  border: 0;
+  display: grid;
+  place-items: center;
+  color: #555;
+  transition:
+    color 0.2s,
+    background 0.2s,
+    transform 0.15s;
+  backdrop-filter: blur(4px);
+}
+.wishlist-btn:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+.wishlist-btn.is-saved {
+  color: #000;
+}
+.wishlist-btn.is-saved svg {
+  filter: drop-shadow(0 0 2px #0003);
+}
+.product-label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background: #fff;
+  color: #000;
+  font-size: 9px;
+  padding: 6px 9px;
+}
+.product-card-plus {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.product-card-view {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 14px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  transform: translateY(102%);
+  transition: transform 0.22s ease;
+}
+@media (hover: hover) {
+  .product-card-image:hover .product-card-view,
+  .product-card-image:focus-visible .product-card-view {
+    transform: translateY(0);
+  }
+}
+.product-card-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+  margin-top: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.product-card-info a {
+  text-decoration: none;
+}
+.product-card-info > span {
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 500;
+}
+.product-card-color {
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  margin-top: 7px;
+}
+.product-card-color i {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #bbb;
+}
+@media (max-width: 600px) {
+  .product-card-info {
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 11px;
+  }
+  .product-card-color span {
+    display: none;
+  }
+  .product-label {
+    font-size: 8px;
+    left: 8px;
+    top: 8px;
+  }
+}
