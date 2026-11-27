@@ -48,6 +48,15 @@ No hay generación de fotos en vivo ni mezcla libre de prendas: cada look es una
 
 ## Publicar en DevStudio
 
+### GitHub Pages
+
+En `Settings → Pages → Build and deployment → Source`, selecciona **GitHub Actions**.
+El workflow `.github/workflows/pages.yml` compila y publica `dist` con cada push a `main`.
+También se puede ejecutar desde `Actions → Publish PULSO to GitHub Pages → Run workflow`.
+La dirección prevista es `https://raldylopez20.github.io/Pulso-Ecommerce/`.
+Si el primer despliegue falla porque Pages aún no está activado, selecciona la fuente
+indicada y vuelve a ejecutar el workflow. La tienda sigue siendo una demo sin pagos reales.
+
 `npm run build` genera `dist/`. Se puede alojar el contenido de esa carpeta en un hosting estático, incluso bajo una subcarpeta. Las rutas usan `#/shop`, `#/product/core-tee` y `#/showroom`, por lo que no requieren reescrituras del servidor. El archivo `release/pulso.zip`, cuando exista, contiene la versión compilada.
 
 Sirve la carpeta por HTTP; no abras `index.html` directamente como `file://`. No es un tema Liquid instalable en Shopify. Una integración real requiere trabajo adicional.
